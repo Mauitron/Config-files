@@ -3,13 +3,29 @@ theme = "night_owl"
 [editor]
 auto-save = true
 color-modes = true
+cursorline = true
 popup-border = "popup"
 indent-heuristic = "tree-sitter"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 30 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 1
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 [editor.lsp]
 enable = true
 display-messages = true
 display-inlay-hints = true
+
+[keys.normal]
+S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
 [keys.normal.space]
 r = ":sh start cmd.exe /k cargo run"
