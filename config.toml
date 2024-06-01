@@ -1,0 +1,15 @@
+theme = "night_owl"
+
+[editor]
+auto-save = true
+color-modes = true
+popup-border = "popup"
+indent-heuristic = "tree-sitter"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = true
+
+[keys.normal.space]
+r = ":sh start cmd.exe /k cargo run"
