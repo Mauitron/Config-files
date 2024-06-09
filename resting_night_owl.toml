@@ -1,0 +1,37 @@
+inherits = "night_owl"
+
+"diagnostic.error" = { underline = { color = "apricot", style = "curl"}}
+"diagnostic.warning" = { underline = { color = "lightning", style = "curl"}}
+"diagnostic.hint" = { underline = { color = "#afdbcc", style = "curl"}}
+"diagnostic.info" = { underline = { color = "delta", style = "curl"}}
+"ui.virtual.inlay-hint" = {fg = "#435d84"}
+
+'type' = { fg = '#1e720d' }
+'variable' = { fg = '#36cf17', modifiers = ['fast-blink'] }
+'variable.builtin' = { fg = '#30b715', modifiers = ['italic'] }
+
+'warning' = { fg = 'peach', modifiers = ['dim', 'fast-blink'] }
+'error' = { fg = 'red', modifiers = ['dim', 'slow-blink'] }
+'info' = { fg = 'blue', modifiers = ['dim', 'slow-blink'] }
+'hint' = { fg = 'paleblue', modifiers = ['dim', 'slow-blink'] }
+
+
+[palette]
+white = "#ffffff"
+lilac = "#dbbfef"
+lavender = "#a4a0e8"
+comet = "#5a5977"
+bossanova = "#452859"
+midnight = "#3b224c"
+revolver = "#281733"
+
+silver = "#cccccc"
+sirocco = "#697C81"
+mint = "#3ce41b"
+almond = "#eccdba"
+chamois = "#E8DCA0"
+honey = "#efba5d"
+
+apricot = "#f47868"
+lightning = "#ffcd1c"
+delta = "#6F44F0"
