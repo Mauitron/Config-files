@@ -1,17 +1,30 @@
-theme = "night_owl"
+theme = "resting_night_owl"
 
 [editor]
+auto-info = true
 auto-save = true
 color-modes = true
 cursorline = true
+true-color = true
+undercurl = true
+line-number = "relative"
+bufferline = "multiple"
 popup-border = "popup"
-indent-heuristic = "tree-sitter"
+completion-timeout = 5
+completion-trigger-len = 1
+rulers = [120]
 
-[editor.soft-wrap]
-enable = true
-max-wrap = 30 # increase value to reduce forced mid-word wrapping
-max-indent-retain = 1
-wrap-indicator = ""  # set wrap-indicator to "" to hide it
+[editor.gutters]
+#layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.gutters.line-numbers]
+#min-width = 1
+
+#[editor.soft-wrap]
+#enable = true
+#max-wrap = 20 # increase value to reduce forced mid-word wrapping
+#max-indent-retain = 1
+#wrap-indicator = ""  # set wrap-indicator to "" to hide it
 
 [editor.cursor-shape]
 insert = "bar"
@@ -23,9 +36,23 @@ enable = true
 display-messages = true
 display-inlay-hints = true
 
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.file-picker]
+hidden = true
+
 [keys.normal]
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+q = ["goto_next_buffer"]
+";" = ["goto_previous_buffer"]
+"`" = ["insert_mode"]
+[keys.insert]
+"`" = ["normal_mode"]
+"esc" = ["normal_mode"]
 
 [keys.normal.space]
 r = ":sh start cmd.exe /k cargo run"
+
