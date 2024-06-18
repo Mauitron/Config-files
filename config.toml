@@ -7,12 +7,13 @@ color-modes = true
 cursorline = true
 true-color = true
 undercurl = true
-line-number = "relative"
+auto-pairs = true
+#line-number = "relative"
 bufferline = "multiple"
-popup-border = "popup"
-completion-timeout = 5
+popup-border = "all"
+completion-timeout = 10
 completion-trigger-len = 1
-rulers = [120]
+
 
 [editor.gutters]
 #layout = ["diff", "diagnostics", "line-numbers", "spacer"]
@@ -22,9 +23,9 @@ rulers = [120]
 
 #[editor.soft-wrap]
 #enable = true
-#max-wrap = 20 # increase value to reduce forced mid-word wrapping
+#max-wrap = 10 # increase value to reduce forced mid-word wrapping
 #max-indent-retain = 1
-#wrap-indicator = ""  # set wrap-indicator to "" to hide it
+#wrap-indicator = "|"  # set wrap-indicator to "" to hide it
 
 [editor.cursor-shape]
 insert = "bar"
@@ -46,12 +47,25 @@ hidden = true
 [keys.normal]
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-q = ["goto_next_buffer"]
-";" = ["goto_previous_buffer"]
-"`" = ["insert_mode"]
+#";" = ["goto_next_buffer"]
+#"\\" = ["goto_previous_buffer"]
+#"esc" = ["insert_mode"]
+#"Q" = ["replay_macro"]
+#"q" = ["record_macro"]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+
+
+
 [keys.insert]
-"`" = ["normal_mode"]
+#"`" = ["normal_mode"]
 "esc" = ["normal_mode"]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
 
 [keys.normal.space]
 r = ":sh start cmd.exe /k cargo run"
