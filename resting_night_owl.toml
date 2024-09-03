@@ -2,14 +2,14 @@ inherits = "night_owl"
 
 #"comment" = { fg = "slate", modifiers = ["slow_blink", "italic"] }
 
-"diagnostic.error" = {underline = { color = "apricot", style = "curl"}, modifiers = ["slow_blink", "bold"]}
-"diagnostic.warning" = { underline = { color = "lightning", style = "curl"}, modifiers = ["slow_blink", "bold"]}
-"diagnostic.hint" = { underline = { color = "#afdbcc", style = "curl"}, modifiers = ["slow_blink", "bold"]}
-"diagnostic.info" = { underline = { color = "delta", style = "curl"}, modifiers = ["slow_blink", "bold"]}
-#"ui.virtual.inlay-hint" = {fg = "#435d84"}
+"diagnostic.error" = {underline = { color = "apricot", style = "curl"}, modifiers = ["italic", "bold"]}
+"diagnostic.warning" = { underline = { color = "lightning", style = "curl"}, modifiers = ["italic", "bold"]}
+"diagnostic.hint" = { underline = { color = "#afdbcc", style = "curl"}, modifiers = ["italic", "bold"]}
+"diagnostic.info" = { underline = { color = "delta", style = "curl"}, modifiers = ["italic", "bold"]}
 
+
+"ui.virtual" = { fg = "faint-blue" }
 'type' = { fg = '#1e720d' }
-#'variable' = { fg = '#36cf17', modifiers = ['fast-blink'] }
 'variable.builtin' = { fg = '#30b715', modifiers = ['italic'] }
 
 'warning' = { fg = 'peach', modifiers = ['dim'] }
@@ -22,7 +22,5 @@ inherits = "night_owl"
 apricot = "#f47868"
 lightning = "#ffcd1c"
 delta = "#6F44F0"
-
-
-
+faint-blue = "#154c79"
 
